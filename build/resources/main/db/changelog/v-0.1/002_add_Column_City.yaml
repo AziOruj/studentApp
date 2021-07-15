@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 02
+      author: azioruj
+      changes:
+        - addColumn:
+            tableName: students
+            columns:
+              - column:
+                  name: city
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
